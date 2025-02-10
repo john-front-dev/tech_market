@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222222;
+}
+
+img {
+  object-fit: contain;
+  max-height: 180px;
+}
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  line-height: 24px;
+  cursor: pointer;
+  width: 21px;
+  height: 3px;
+  background-color: rgb(223, 217, 217);
+  border-radius: 10px;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background-color: #ffbe1f;
+}
+
+.no-scrollbar {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
